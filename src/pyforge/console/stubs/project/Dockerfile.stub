@@ -1,0 +1,29 @@
+# syntax=docker/dockerfile:1
+
+FROM python:3.11-slim AS base
+WORKDIR /app
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PIP_NO_CACHE_DIR=1
+
+# System deps only needed for building wheels with C extensions (bcrypt, etc.)
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY pyproject.toml ./
+COPY . .
+RUN pip install .
+
+RUN useradd --create-home --uid 1000 app \
+    && mkdir -p storage \
+    && chown -R app:app /app
+USER app
+
+EXPOSE 8000
+
+# Migrations run as a separate step in your deploy pipeline (e.g. an init
+# container / release-phase command) — `pyforge migrate` — not baked into
+# this image's startup, so a rolling deploy of multiple instances doesn't
+# race to apply the same migration concurrently.
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

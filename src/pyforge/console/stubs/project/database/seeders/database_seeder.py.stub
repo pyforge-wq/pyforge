@@ -1,0 +1,8 @@
+from pyforge.orm import Seeder
+
+
+class DatabaseSeeder(Seeder):
+    """Run with `pyforge db:seed`. Call other seeders / factories from here."""
+
+    def run(self) -> None:
+        pass

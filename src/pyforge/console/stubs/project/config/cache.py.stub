@@ -1,0 +1,7 @@
+from pyforge import env
+
+config = {
+    "default": env("CACHE_DRIVER", "memory"),
+    "file_path": env("CACHE_FILE_PATH", "storage/cache"),
+    "redis_url": env("REDIS_URL", "redis://127.0.0.1:6379/0"),
+}

@@ -1,0 +1,11 @@
+from pyforge import env
+
+config = {
+    "default": env("MAIL_DRIVER", "smtp"),
+    "host": env("MAIL_HOST", "localhost"),
+    "port": env("MAIL_PORT", 1025),
+    "username": env("MAIL_USERNAME", None),
+    "password": env("MAIL_PASSWORD", None),
+    "use_tls": env("MAIL_USE_TLS", False),
+    "from_address": env("MAIL_FROM_ADDRESS", "hello@example.com"),
+}

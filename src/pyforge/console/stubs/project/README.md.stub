@@ -1,0 +1,20 @@
+# {{ project_name }}
+
+A [PyForge](https://github.com/pyforge-framework/pyforge) application.
+
+## Getting started
+
+```bash
+pyforge serve
+```
+
+Then visit http://localhost:8000/docs for the interactive API docs (generated
+automatically by FastAPI), or http://localhost:8000/ for the welcome route.
+
+## Project layout
+
+- `app/` - controllers, models, services, and everything else your app owns.
+- `routes/` - `api.py` and `web.py` register your routes.
+- `config/` - one file per configuration namespace, read via `config("app.name")`.
+- `database/` - migrations and seeders (Phase 2 of PyForge).
+- `tests/` - pytest tests, including a working example for the welcome route.

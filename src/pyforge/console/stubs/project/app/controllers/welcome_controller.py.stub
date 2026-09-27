@@ -1,0 +1,6 @@
+class WelcomeController:
+    async def index(self) -> dict:
+        return {"message": "Welcome to {{ project_name }}, powered by PyForge."}
+
+    async def health(self) -> dict:
+        return {"status": "ok"}

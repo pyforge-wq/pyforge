@@ -1,0 +1,11 @@
+from pyforge import env
+
+# Used by pyforge.auth.Auth — an optional module (pip install
+# pyforge-framework[auth]), see docs/architecture/03-public-api-design.md.
+config = {
+    "default": "jwt",
+    "jwt": {
+        "secret": env("JWT_SECRET", "change-me"),
+        "ttl_minutes": env("JWT_TTL_MINUTES", 60),
+    },
+}

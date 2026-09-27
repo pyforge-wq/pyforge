@@ -1,0 +1,80 @@
+site_name: PyForge
+site_description: A batteries-included web framework for Python, built on FastAPI.
+repo_url: https://github.com/pyforge-framework/pyforge
+repo_name: pyforge-framework/pyforge
+edit_uri: edit/main/docs-site/docs/
+
+docs_dir: docs
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - toc.follow
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Guides:
+      - Routing & Controllers: routing-and-controllers.md
+      - Dependency Injection & Config: dependency-injection-and-config.md
+      - Database & ORM: database.md
+      - Migrations, Factories & Seeders: migrations-and-seeders.md
+      - Validation & API Resources: validation-and-api.md
+      - Authentication: authentication.md
+      - Authorization: authorization.md
+      - Middleware: middleware.md
+      - Events, Queues & Scheduling: events-and-queues.md
+      - Mail & Notifications: mail-and-notifications.md
+      - Storage & Cache: storage-and-cache.md
+      - Multi-tenancy: multi-tenancy.md
+      - Testing: testing.md
+      - Security: security.md
+      - Deployment: deployment.md
+  - Reference:
+      - CLI Reference: cli-reference.md
+      - Extending PyForge: packages.md
+  - Troubleshooting: troubleshooting.md
+  - Contributing: contributing.md

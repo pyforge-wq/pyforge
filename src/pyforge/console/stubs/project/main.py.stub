@@ -1,0 +1,20 @@
+"""{{ project_name }} - a PyForge application."""
+
+from pyforge import PyForge
+
+from app.providers.app_service_provider import AppServiceProvider
+
+app = PyForge(title="{{ project_name }}")
+
+app.register(AppServiceProvider)
+
+# routes/ (and therefore your controllers) are imported only after providers
+# have registered — a provider that calls config(...) or builds something
+# from it (e.g. pyforge.auth's Auth) needs PyForge() to already exist, and a
+# decorator applied in a controller's class body (like @role(...)) needs
+# whatever it depends on to exist at import time, not just by request time.
+from routes import api as api_routes  # noqa: E402
+from routes import web as web_routes  # noqa: E402
+
+app.register_routes(api_routes.router, prefix="/api")
+app.register_routes(web_routes.router)

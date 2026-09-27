@@ -1,0 +1,40 @@
+"""${message}
+
+Revision ID: ${up_revision}
+Revises: ${down_revision | comma,n}
+Create Date: ${create_date}
+"""
+from __future__ import annotations
+
+from pyforge.database.schema import Schema
+
+# revision identifiers, used by Alembic.
+revision = ${repr(up_revision)}
+down_revision = ${repr(down_revision)}
+branch_labels = ${repr(branch_labels)}
+depends_on = ${repr(depends_on)}
+
+<%
+import re
+_match = re.match(r"^create_(\w+?)_table$", message or "")
+_table_name = _match.group(1) if _match else None
+%>
+% if _table_name:
+def upgrade() -> None:
+    with Schema.create("${_table_name}") as table:
+        table.id()
+        table.timestamps()
+
+
+def downgrade() -> None:
+    Schema.drop("${_table_name}")
+% else:
+def upgrade() -> None:
+    with Schema.table("TODO_table_name") as table:
+        pass  # table.string("column_name")
+
+
+def downgrade() -> None:
+    with Schema.table("TODO_table_name") as table:
+        table.drop_column("column_name")
+% endif

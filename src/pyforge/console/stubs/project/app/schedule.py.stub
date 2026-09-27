@@ -1,0 +1,14 @@
+"""Scheduled tasks, run by `pyforge schedule:run` — meant to be invoked by
+a real OS cron entry once a minute, not a long-running process itself.
+
+    from pyforge.scheduler import Schedule
+
+    schedule = Schedule()
+    # schedule.every_day(GenerateReports()).at("02:00")
+    # schedule.every_hour(CleanupTemporaryFiles())
+    # schedule.cron("*/15 * * * *", SyncExternalData())
+"""
+
+from pyforge.scheduler import Schedule
+
+schedule = Schedule()

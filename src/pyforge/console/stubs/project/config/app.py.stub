@@ -1,0 +1,8 @@
+from pyforge import env
+
+config = {
+    "name": env("APP_NAME", "{{ project_name }}"),
+    "env": env("APP_ENV", "development"),
+    "debug": env("APP_DEBUG", True),
+    "url": env("APP_URL", "http://localhost:8000"),
+}

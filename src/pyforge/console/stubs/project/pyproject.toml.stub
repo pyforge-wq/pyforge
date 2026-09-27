@@ -1,0 +1,21 @@
+[project]
+name = "{{ project_name }}"
+version = "0.1.0"
+description = "A PyForge application."
+requires-python = ">=3.11"
+dependencies = [
+    "pyforge-framework>=0.1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# A generated PyForge project is an application (main.py + routes/ + config/
+# at the top level), not a library — there's no single "{{ project_name }}"
+# package directory for hatchling to auto-detect. bypass-selection tells
+# hatchling this pyproject.toml exists to declare dependencies, not to ship
+# a wheel; without it, `pip install .` fails on every freshly generated
+# project (hatchling can't determine which files to include).
+[tool.hatch.build.targets.wheel]
+bypass-selection = true

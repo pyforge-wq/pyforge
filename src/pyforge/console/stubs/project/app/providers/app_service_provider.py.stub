@@ -1,0 +1,11 @@
+from pyforge import ServiceProvider
+
+
+class AppServiceProvider(ServiceProvider):
+    """Register and boot application-specific services here."""
+
+    def register(self) -> None:
+        pass
+
+    def boot(self) -> None:
+        pass
