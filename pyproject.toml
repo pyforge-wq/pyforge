@@ -53,6 +53,7 @@ dev = [
     "aiosmtpd>=1.4",
     "moto[s3]>=5.0",
     "build>=1.0",
+    "hatchling>=1.24",
     "pyforge-framework[auth,cache,queue,storage]",
 ]
 
