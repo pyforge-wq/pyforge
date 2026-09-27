@@ -52,6 +52,7 @@ dev = [
     "fakeredis>=2.20",
     "aiosmtpd>=1.4",
     "moto[s3]>=5.0",
+    "build>=1.0",
     "pyforge-framework[auth,cache,queue,storage]",
 ]
 
