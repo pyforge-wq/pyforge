@@ -45,7 +45,7 @@ project in public spaces.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported by opening a private
-[GitHub Security Advisory](https://github.com/pyforge-framework/pyforge/security/advisories/new)
+[GitHub Security Advisory](https://github.com/pyforge-wq/pyforge/security/advisories/new)
 or, where that's not appropriate for the report, via GitHub's own
 [report abuse](https://github.com/contact/report-abuse) flow. All complaints
 will be reviewed and investigated promptly and fairly.

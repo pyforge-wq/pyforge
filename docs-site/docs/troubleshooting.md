@@ -2,7 +2,7 @@
 
 The gotchas on this page account for the vast majority of "why doesn't this
 work" moments with PyForge. If you hit something not listed here, please
-[open an issue](https://github.com/pyforge-framework/pyforge/issues) — this
+[open an issue](https://github.com/pyforge-wq/pyforge/issues) — this
 page is meant to grow.
 
 ## A controller route silently doesn't work
@@ -187,7 +187,7 @@ anything else (including the queue driver, if you're also using
 
 ## Still stuck?
 
-Check [09-roadmap.md](https://github.com/pyforge-framework/pyforge/blob/main/docs/architecture/09-roadmap.md)
+Check [09-roadmap.md](https://github.com/pyforge-wq/pyforge/blob/main/docs/architecture/09-roadmap.md)
 for whether the thing you're trying to do is actually built yet — several
 features that sound like they should exist (route-model binding, job
 timeouts, an admin UI, autogenerate-by-default migrations) are explicitly

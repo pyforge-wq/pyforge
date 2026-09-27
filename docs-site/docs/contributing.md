@@ -1,14 +1,14 @@
 # Contributing
 
 PyForge is at `0.7.0` — all 7 roadmap phases implemented, still pre-`1.0.0`.
-See the [roadmap](https://github.com/pyforge-framework/pyforge/blob/main/docs/architecture/09-roadmap.md)
+See the [roadmap](https://github.com/pyforge-wq/pyforge/blob/main/docs/architecture/09-roadmap.md)
 for what's built vs. planned before starting significant work, and consider
 opening an issue to discuss direction first for anything beyond a small fix.
 
 ## Development setup
 
 ```bash
-git clone https://github.com/pyforge-framework/pyforge.git
+git clone https://github.com/pyforge-wq/pyforge.git
 cd pyforge
 python3.11 -m venv .venv
 source .venv/bin/activate
@@ -59,7 +59,7 @@ verification pass found).
 
 This site lives in `docs-site/` (MkDocs + Material), separate from
 `docs/architecture/` (internal design documentation for contributors —
-see [08-documentation-architecture.md](https://github.com/pyforge-framework/pyforge/blob/main/docs/architecture/08-documentation-architecture.md)
+see [08-documentation-architecture.md](https://github.com/pyforge-wq/pyforge/blob/main/docs/architecture/08-documentation-architecture.md)
 for why the two are split). Every code sample on this site should reflect
 something real — backed by a test in `tests/` or the generated project
 template — never an aspirational example.
@@ -77,10 +77,10 @@ mkdocs serve
 
 ## Reporting bugs / requesting features
 
-Use [GitHub Issues](https://github.com/pyforge-framework/pyforge/issues).
-For security vulnerabilities, see [SECURITY.md](https://github.com/pyforge-framework/pyforge/blob/main/SECURITY.md)
+Use [GitHub Issues](https://github.com/pyforge-wq/pyforge/issues).
+For security vulnerabilities, see [SECURITY.md](https://github.com/pyforge-wq/pyforge/blob/main/SECURITY.md)
 instead of opening a public issue.
 
 ## Code of Conduct
 
-This project follows the [Contributor Covenant](https://github.com/pyforge-framework/pyforge/blob/main/CODE_OF_CONDUCT.md).
+This project follows the [Contributor Covenant](https://github.com/pyforge-wq/pyforge/blob/main/CODE_OF_CONDUCT.md).

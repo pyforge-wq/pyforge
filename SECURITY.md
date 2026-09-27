@@ -11,7 +11,7 @@ be documented here.
 **Please do not open a public GitHub issue for security vulnerabilities.**
 
 Report privately via
-[GitHub Security Advisories](https://github.com/pyforge-framework/pyforge/security/advisories/new)
+[GitHub Security Advisories](https://github.com/pyforge-wq/pyforge/security/advisories/new)
 for this repository. Include:
 
 - A description of the vulnerability and its potential impact

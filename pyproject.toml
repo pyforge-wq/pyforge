@@ -61,9 +61,9 @@ dev = [
 pyforge = "pyforge.console.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/pyforge-framework/pyforge"
-Documentation = "https://github.com/pyforge-framework/pyforge/tree/main/docs"
-Issues = "https://github.com/pyforge-framework/pyforge/issues"
+Homepage = "https://github.com/pyforge-wq/pyforge"
+Documentation = "https://github.com/pyforge-wq/pyforge/tree/main/docs"
+Issues = "https://github.com/pyforge-wq/pyforge/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/pyforge"]

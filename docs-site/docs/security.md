@@ -3,7 +3,7 @@
 PyForge's rule for security-sensitive code: **never reinvent cryptography.**
 Every item below wraps an established library rather than implementing a
 crypto primitive itself. This page is the task-oriented version; the
-in-repo [architecture doc](https://github.com/pyforge-framework/pyforge/blob/main/docs/architecture/10-security.md)
+in-repo [architecture doc](https://github.com/pyforge-wq/pyforge/blob/main/docs/architecture/10-security.md)
 walks the same checklist in full audit-report detail, including what was
 found and fixed during the Phase 7 review.
 
@@ -143,5 +143,5 @@ see [Storage & Cache](storage-and-cache.md#storage-pyforgestorage).
 
 ## Reporting a vulnerability
 
-See [SECURITY.md](https://github.com/pyforge-framework/pyforge/blob/main/SECURITY.md)
+See [SECURITY.md](https://github.com/pyforge-wq/pyforge/blob/main/SECURITY.md)
 for how to report privately rather than as a public GitHub issue.

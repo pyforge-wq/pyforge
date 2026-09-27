@@ -9,7 +9,7 @@ an issue to discuss direction first for anything beyond a small fix.
 ## Development setup
 
 ```bash
-git clone https://github.com/pyforge-framework/pyforge.git
+git clone https://github.com/pyforge-wq/pyforge.git
 cd pyforge
 python3.11 -m venv .venv
 source .venv/bin/activate
@@ -72,7 +72,7 @@ imports and serves — see the CI workflow for the exact commands.
 
 ## Reporting bugs / requesting features
 
-Use [GitHub Issues](https://github.com/pyforge-framework/pyforge/issues).
+Use [GitHub Issues](https://github.com/pyforge-wq/pyforge/issues).
 For security vulnerabilities, see [SECURITY.md](SECURITY.md) instead of
 opening a public issue.
 

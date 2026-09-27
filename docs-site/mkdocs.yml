@@ -1,7 +1,7 @@
 site_name: PyForge
 site_description: A batteries-included web framework for Python, built on FastAPI.
-repo_url: https://github.com/pyforge-framework/pyforge
-repo_name: pyforge-framework/pyforge
+repo_url: https://github.com/pyforge-wq/pyforge
+repo_name: pyforge-wq/pyforge
 edit_uri: edit/main/docs-site/docs/
 
 docs_dir: docs

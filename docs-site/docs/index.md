@@ -9,7 +9,7 @@ FastAPI stays the real HTTP engine underneath — always one attribute away
 
 !!! info "Status"
     `0.7.0` — all 7 roadmap phases implemented and tested, still pre-`1.0.0`
-    on purpose. See [the roadmap](https://github.com/pyforge-framework/pyforge/blob/main/docs/architecture/09-roadmap.md)
+    on purpose. See [the roadmap](https://github.com/pyforge-wq/pyforge/blob/main/docs/architecture/09-roadmap.md)
     for exactly what's built vs. deferred.
 
 ## Install it and run something in under a minute
@@ -73,7 +73,7 @@ says so directly instead of staying quiet about it.
 ## Getting help
 
 - Found a bug or have a feature request? Open an issue on
-  [GitHub](https://github.com/pyforge-framework/pyforge/issues).
-- Security issue? See [SECURITY.md](https://github.com/pyforge-framework/pyforge/blob/main/SECURITY.md)
+  [GitHub](https://github.com/pyforge-wq/pyforge/issues).
+- Security issue? See [SECURITY.md](https://github.com/pyforge-wq/pyforge/blob/main/SECURITY.md)
   for how to report it privately rather than as a public issue.
 - Want to contribute? See [Contributing](contributing.md).
